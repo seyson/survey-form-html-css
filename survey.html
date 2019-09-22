@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- necessary line -->
+<html lang="en"> <!-- browser must know the language of the page -->
+  <head>
+    <meta charset="utf-8"> <!-- browser must know the character set used in the page -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link type="text/css" rel="stylesheet" href="survey.css" media="screen">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">...short description...</p>
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </div>
+      
+      <div>
+        <label id="email-label" for="email">Email:
+          <input id="email" type="email" placeholder="Enter your email" required>
+        </label>
+      </div>
+      
+      <div>
+        <label id="number-label" for="number">Age:
+          <input id="number" type="number" placeholder="Enter your age" min="1" max="125" required>
+        </label>
+      </div>
+      
+      <div>
+        <label id="role-label" for="dropdown">Role:
+          <select id="dropdown">
+            <option value="role1">role1</option>
+            <option value="role2">role2</option>
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label for="x">Question:
+          <input id="x" type="radio" name="p" value="1">x
+        </label>
+        
+        <label for="y">
+          <input id="y" type="radio" name="p" value="2">y
+        </label>
+      </div>
+      
+      <div>
+        <label>Question2:
+          <input type="checkbox" name="q" value="1">a
+        </label> <!-- no need for 'for' and 'id' attributes: label is implicitly associated with the nested input -->
+        <label>
+          <input type="checkbox" name="q" value="2">b
+        </label>
+      </div>
+
+      <div>
+        <textarea id="comments" name="comment" placeholder="Enter your comment here"></textarea>
+      </div>
+        
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
