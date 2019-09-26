@@ -1,8 +1,44 @@
 body {
-  /* background-color: #fffed3; */
-  text-align: center;
+  background-color: #fffed3;
+  /* text-align: center; */
   font-family: Helvetica, sans-serif;
   min-width: 320px;
+}
+
+h1 {
+  text-align: center;
+}
+#outer-form {
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+#survey-form {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.label {
+  align-self: center;
+  justify-self: flex-end;
+}
+
+#comment-label {
+  align-self: flex-start;
+}
+
+.text-field {
+
 }
 
 .dropdown {
@@ -24,14 +60,9 @@ body {
   background-color: #ececec;
 }
 
-#outer-form {
-  /* background-color: #fffed3; */
-  margin: 0 auto;
-  border-radius: 4px;
-  width: 75%;
-  max-width: 900px;
-  padding: 10px;
-  padding-top: 20px;
+#comments {
+  width: 22em;
+  height: 11em;
 }
 
 #submit {
@@ -41,5 +72,5 @@ body {
   height: 44px;
   width: 102px;
   margin: 5px;
-  border: 0px;
+  border: 1px solid rgb(158, 158, 158);
 }

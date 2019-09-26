@@ -6,56 +6,47 @@
     <link type="text/css" rel="stylesheet" href="survey.css" media="screen">
   </head>
   <body>
+    <h1 id="title">Survey Form</h1>
     <div id="outer-form">
-      <h1 id="title">Survey Form</h1>
-      <p id="description">...short description...</p>
       <form id="survey-form">
-        <div>
-          <label id="name-label" for="name">Name*:</label>
+        <p id="description">...short description...</p>
+        <div class="container">
+          <label class="label" id="name-label" for="name">Name*:</label>
           <input class="text-field" id="name" type="text" placeholder="Enter your name" required>
         </div>
         
-        <div>
-          <label id="email-label" for="email">Email*:
-            <input class="text-field" id="email" type="email" placeholder="Enter your email" required>
-          </label>
+        <div class="container">
+          <label class="label" id="email-label" for="email">Email*:</label>
+          <input class="text-field" id="email" type="email" placeholder="Enter your email" required>
         </div>
         
-        <div>
-          <label id="number-label" for="number">Age*:
-            <input class="text-field" id="number" type="number" placeholder="Enter your age" min="1" max="125" required>
-          </label>
+        <div class="container">
+          <label class="label" id="number-label" for="number">Age*:</label>
+          <input class="text-field" id="number" type="number" placeholder="Enter your age" min="1" max="125" required>
         </div>
         
-        <div>
-          <label id="role-label" for="dropdown">Role:
+        <div class="container">
+          <label class="label" id="role-label" for="dropdown">Role:</label>
             <select class="dropdown" id="dropdown">
               <option value="role1">role1</option>
               <option value="role2">role2</option>
             </select>
-          </label>
         </div>
 
-        <div>
-          <label for="x">Question:
-            <input id="x" type="radio" name="p" value="1">x
-          </label>
-          
-          <label for="y">
-            <input id="y" type="radio" name="p" value="2">y
-          </label>
+        <div class="container">
+          <label class="label">Question1:</label>
+          <label for="r1"><input id="r1" type="radio" name="p" value="1"> a</label>
+          <label for="r2"><input id="r2" type="radio" name="p" value="2"> b</label>
         </div>
         
-        <div>
-          <label>Question2:
-            <input type="checkbox" name="q" value="1">a
-          </label> <!-- no need for 'for' and 'id' attributes: label is implicitly associated with the nested input -->
-          <label>
-            <input type="checkbox" name="q" value="2">b
-          </label>
+        <div class="container">
+          <label class="label">Question2:</label>
+          <label for="cb1"><input id="cb1" type="checkbox" name="q" value="1"> a</label>
+          <label for="cb2"><input id="cb2" type="checkbox" name="q" value="2"> b</label>
         </div>
 
-        <div>
+        <div class="container">
+          <label id="comment-label" for="comments">Comments:</label>
           <textarea class="text-field" id="comments" name="comment" placeholder="Enter your comment here"></textarea>
         </div>
           
