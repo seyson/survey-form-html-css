@@ -11,20 +11,21 @@
       <form id="survey-form">
         <p id="description">...short description...</p>
         <div class="container">
+          
           <label class="label" id="name-label" for="name">Name*:</label>
           <input class="text-field" id="name" type="text" placeholder="Enter your name" required>
         </div>
-        
+        <hr/>
         <div class="container">
           <label class="label" id="email-label" for="email">Email*:</label>
           <input class="text-field" id="email" type="email" placeholder="Enter your email" required>
         </div>
-        
+        <hr/>
         <div class="container">
           <label class="label" id="number-label" for="number">Age*:</label>
           <input class="text-field" id="number" type="number" placeholder="Enter your age" min="1" max="125" required>
         </div>
-        
+        <hr/>
         <div class="container">
           <label class="label" id="role-label" for="dropdown">Role:</label>
             <select class="dropdown" id="dropdown">
@@ -32,7 +33,7 @@
               <option value="role2">role2</option>
             </select>
         </div>
-
+        <hr/>
         <div class="container">
           <label class="label">Question1:</label>
           <label class="selections" for="r1"><input id="r1" type="radio" name="p" value="1"> a</label>
@@ -40,7 +41,7 @@
           <label class="selections" for="r3"><input id="r3" type="radio" name="p" value="3"> c</label>
           <label class="selections" for="r4"><input id="r4" type="radio" name="p" value="4"> d</label>
         </div>
-        
+        <hr/>
         <div class="container">
           <label class="label">Question2:</label>
           <label class="selections" for="cb1"><input id="cb1" type="checkbox" name="q" value="1"> a</label>
@@ -48,10 +49,11 @@
           <label class="selections" for="cb3"><input id="cb3" type="checkbox" name="q" value="3"> c</label>
           <label class="selections" for="cb4"><input id="cb4" type="checkbox" name="q" value="4"> d</label>
         </div>
-
+        <hr/>
         <div class="container">
-          <label id="comment-label" for="comments">Comments:</label>
-          <textarea class="text-field" id="comments" name="comment" placeholder="Enter your comment here"></textarea>
+          <label id="comment-label" for="comments">Comments:
+            <textarea class="text-field" id="comments" name="comment" placeholder="Enter your comment here"></textarea>
+          </label>
         </div>
           
         <button id="submit" type="submit">Submit</button>
