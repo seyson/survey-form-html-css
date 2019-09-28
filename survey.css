@@ -116,3 +116,12 @@ hr {
 #submit:active {
   background-color: rgb(147, 148, 143);
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(212, 236, 245);
+  }
+  .text-field {
+    width: 82%;
+  }
+}
