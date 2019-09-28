@@ -27,10 +27,11 @@ h1 {
 .container {
   display: flex;
   flex-direction: column;
-  
 }
 
-input, .dropdown, .selection {
+input,
+.dropdown,
+.selection {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -38,8 +39,8 @@ input, .dropdown, .selection {
 }
 
 hr {
-	border-top: 3px double #ececec;
-	text-align: center;
+  border-top: 3px double #ececec;
+  text-align: center;
 }
 
 .blah {
@@ -69,7 +70,6 @@ hr {
 .label {
   align-self: center;
   justify-self: flex-end;
-  
 }
 
 #comment-label {
@@ -78,12 +78,11 @@ hr {
   flex-direction: column;
 }
 
-
 .dropdown {
   height: 35px;
   width: 140px;
   padding: 5px;
-  margin: 10px;  
+  margin: 10px;
   margin-top: 15px;
   border: 1px solid #d0d1d3;
   border-radius: 2px;
@@ -106,7 +105,7 @@ hr {
 #submit {
   background-color: rgb(240, 238, 207);
   border-radius: 5px;
-  color:black;
+  color: black;
   height: 44px;
   width: 102px;
   margin: 5px;
